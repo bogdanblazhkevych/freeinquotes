@@ -1,0 +1,25 @@
+.Info{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph{
+    width: 75vw;
+    text-align: center;
+    font-size: 2vw;
+    font-family: Arial-Black
+}
+@media only screen and (max-width: 800px){
+    .paragraph{
+        font-size: 2.8vw;
+    }
+  }
+
+@media only screen and (max-width: 500px){
+    .paragraph{
+        font-size: 3.5vw;
+    }
+  }

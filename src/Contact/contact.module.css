@@ -1,0 +1,14 @@
+.contact{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact > a{
+    font-size: 7vw;
+    font-family: Arial-Bold;
+    text-decoration: none;
+    color: black;
+}

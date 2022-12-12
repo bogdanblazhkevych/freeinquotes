@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Dollar-Bill";
+    src: url(./../Fonts/DollarBill.ttf)
+}
+@font-face {
+    font-family: "Arial-Black";
+    src: url(./../Fonts/ArialBlack.ttf)
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item > *{
+    font-family: "Dollar-Bill";
+}
+.item > h1{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.product1{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* .item{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.button{
+    background-color: black;
+    padding: 10px;
+    padding-top: 12px;
+    border-radius: 5px;
+}
+
+.button > a{
+    color: white;
+    font-size: min(7vw, 35px);
+    text-decoration: none;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+
+span{
+    font-family: Arial-Black;
+}
+
+.description{
+    font-family: Arial-Black;
+    width: min(90vw, 600px);
+}
+
+.description > p{
+    margin: 10px 0px 10px 0px;
+}
+
+h1{
+    font-size: min(7vw, 35px)
+}
+
+.headline{
+    width: min(90vw, 600px);
+    text-align: left;
+    font-size: 15px;
+}
+
+.information{
+    width: min(90vw, 600px);
+    text-align: left;
+    font-size: 13px;
+}
+
+.spinContainer{
+    position: relative;
+}
+
+.spinIcon{
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url("/Users/bogdanblazhkevych/Desktop/freeinquotes/freeinquotes/src/product1/360.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* opacity: 50%; */
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    pointer-events: none; 
+}
+
+@media only screen and (max-width: 500px) {
+    .item{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .description{
+        padding-bottom: 30vh;
+    }
+}
+
+  @media only screen and (max-width: 360px) {
+    h1{
+        font-size: 30px;
+    }
+  }

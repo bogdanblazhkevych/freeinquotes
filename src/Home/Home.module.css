@@ -1,0 +1,71 @@
+/* @font-face {
+    font-family: Dollar-Bill;
+    src: local('Dollar Bill'), url(./Fonts/DollarBill.ttf) format('ttf')
+} */
+
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.pic{
+    height: 100%;
+    width: 100%;
+}
+
+.homecontainer{
+    width: 100vw;
+    /* height: 100vh; */
+    padding-top: 50px;
+}
+
+.home{
+    /* overflow: hidden; */
+    width: 100vw;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.home > a{
+    text-decoration: none;
+    color: black;
+}
+
+.pageloader{
+    position: fixed;
+    margin-top: -50px;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    font-family: Arial;
+    z-index: 10;
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease;
+    opacity: 100%;
+    cursor: none;
+  }
+  
+  .loadingimage{
+      aspect-ratio: 2 / 1;
+      width: 50vw;
+  }
+
+@media only screen and (max-width: 766px) {
+    .home{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 517px) {
+    .home{
+        grid-template-columns: 1fr;
+    }
+  }
