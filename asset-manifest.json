@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/freeinquotes/static/css/main.9700a740.css",
+    "main.js": "/freeinquotes/static/js/main.d1ab1795.js",
+    "static/js/787.3827e175.chunk.js": "/freeinquotes/static/js/787.3827e175.chunk.js",
+    "static/media/ArialBold.ttf": "/freeinquotes/static/media/ArialBold.ff5427169c7aaacb3946.ttf",
+    "static/media/FEELFREEWHITE.png": "/freeinquotes/static/media/FEELFREEWHITE.ac51efabc223f13e75b5.png",
+    "static/media/ArialBlack.ttf": "/freeinquotes/static/media/ArialBlack.974d5d05b0a539fe53be.ttf",
+    "static/media/FREEWHITE.png": "/freeinquotes/static/media/FREEWHITE.384b723aa80e6c3ab2e8.png",
+    "static/media/DollarBill.ttf": "/freeinquotes/static/media/DollarBill.1550a0642a2f1fc5b9b7.ttf",
+    "static/media/360.png": "/freeinquotes/static/media/360.101c9da7736ea406b8c2.png",
+    "index.html": "/freeinquotes/index.html",
+    "main.9700a740.css.map": "/freeinquotes/static/css/main.9700a740.css.map",
+    "main.d1ab1795.js.map": "/freeinquotes/static/js/main.d1ab1795.js.map",
+    "787.3827e175.chunk.js.map": "/freeinquotes/static/js/787.3827e175.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9700a740.css",
+    "static/js/main.d1ab1795.js"
+  ]
+}
