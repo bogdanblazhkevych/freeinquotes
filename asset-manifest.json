@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0adec75.css",
-    "main.js": "/static/js/main.eed6cab9.js",
+    "main.css": "/static/css/main.bdf18574.css",
+    "main.js": "/static/js/main.cdab9efe.js",
     "static/js/787.3827e175.chunk.js": "/static/js/787.3827e175.chunk.js",
+    "static/media/BOGBOT.jpg": "/static/media/BOGBOT.6f525851c1facffc6351.jpg",
+    "static/media/BOGTOP.jpg": "/static/media/BOGTOP.d0b94adbde88ca4ab4bf.jpg",
+    "static/media/image1.jpg": "/static/media/image1.dca4f255a0a04f5406fa.jpg",
     "static/media/ArialBold.ttf": "/static/media/ArialBold.ff5427169c7aaacb3946.ttf",
     "static/media/FEELFREEWHITE.png": "/static/media/FEELFREEWHITE.ac51efabc223f13e75b5.png",
     "static/media/ArialBlack.ttf": "/static/media/ArialBlack.974d5d05b0a539fe53be.ttf",
     "static/media/FREEWHITE.png": "/static/media/FREEWHITE.384b723aa80e6c3ab2e8.png",
+    "static/media/free.jpg": "/static/media/free.131b039f21dd95609702.jpg",
     "static/media/DollarBill.ttf": "/static/media/DollarBill.1550a0642a2f1fc5b9b7.ttf",
+    "static/media/image3.jpg": "/static/media/image3.c01f4b1eba9dc6516b32.jpg",
+    "static/media/shirt.jpg": "/static/media/shirt.28e7a928baaf0c2865f8.jpg",
+    "static/media/image2.jpg": "/static/media/image2.3fa0069875cf8496a0aa.jpg",
+    "static/media/art.jpg": "/static/media/art.ca0cbbf73f111558f84d.jpg",
     "static/media/360.png": "/static/media/360.101c9da7736ea406b8c2.png",
     "index.html": "/index.html",
-    "main.c0adec75.css.map": "/static/css/main.c0adec75.css.map",
-    "main.eed6cab9.js.map": "/static/js/main.eed6cab9.js.map",
+    "main.bdf18574.css.map": "/static/css/main.bdf18574.css.map",
+    "main.cdab9efe.js.map": "/static/js/main.cdab9efe.js.map",
     "787.3827e175.chunk.js.map": "/static/js/787.3827e175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0adec75.css",
-    "static/js/main.eed6cab9.js"
+    "static/css/main.bdf18574.css",
+    "static/js/main.cdab9efe.js"
   ]
 }
