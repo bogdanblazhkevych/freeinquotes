@@ -18,12 +18,10 @@
 
 .homecontainer{
     width: 100vw;
-    /* height: 100vh; */
     padding-top: 50px;
 }
 
 .home{
-    /* overflow: hidden; */
     width: 100vw;
     padding: 10px;
     display: grid;
@@ -37,10 +35,10 @@
 }
 
 .pageloader{
-    position: fixed;
-    margin-top: -50px;
+    position: absolute;
+    margin-top: -80px;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh + 30px);
     background: white;
     font-family: Arial;
     z-index: 10;
@@ -48,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 1s ease;
+    transition: opacity 1.5s ease;
     opacity: 100%;
     cursor: none;
   }

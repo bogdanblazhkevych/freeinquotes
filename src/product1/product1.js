@@ -1,7 +1,6 @@
 import product1css from './product1.module.css';
 import { React360Viewer } from "react-360-product-viewer";
 import { useState, useRef, useEffect } from 'react';
-import spinlogo from './360.png'
 
 export default function Product1({props: {item, name, price, images, link, description}}){
 
@@ -61,7 +60,7 @@ export default function Product1({props: {item, name, price, images, link, descr
                                     height={viewerSize}
                                     shouldNotifyEvents={true}
                                     notifyOnPointerDown={handleSpinClick}
-                                    // notifyOnPointerMoved={handleSpinClick}
+                                    reverse={true}
                     />
                     <div className={product1css.spinIcon} id="spinIcon"></div>
                 </div>

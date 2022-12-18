@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+@font-face {
+    font-family: "Dollar-Bill";
+    src: url(./../Fonts/DollarBill.ttf)
+}
+.recap{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.top {
+    width: 100vw;
+}
+.free{
+    width: 100vw;
+}
+.bot{
+    width: 100vw;
+}
+.art{
+    width: 100%;
+}
+.shirt{
+    width: 100%;
+}
+.abottom{
+    width: 49%;
+}
+
+.bottombuttons{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.abottom{
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button1{
+    width: 99%;
+}
+.button2{
+    width: 99%;
+}

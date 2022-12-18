@@ -30,13 +30,6 @@
     padding-top: 50px;
 }
 
-/* .item{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 
 .button{
     background-color: black;
@@ -54,7 +47,6 @@
 .button:hover{
     cursor: pointer;
 }
-
 
 span{
     font-family: Arial-Black;
@@ -98,7 +90,6 @@ h1{
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
-    /* opacity: 50%; */
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
@@ -114,7 +105,7 @@ h1{
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-height: 1080px) {
     .description{
         padding-bottom: 30vh;
     }

@@ -4,6 +4,7 @@ import { BsInstagram } from 'react-icons/bs'
 import { BsTwitter } from 'react-icons/bs'
 import { FaTiktok } from 'react-icons/fa'
 import logo from './FREEWHITE.png'
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
 
@@ -35,11 +36,11 @@ export default function Navbar(){
     return(
         <nav className={Navbarcss.navbar}>
         
-            <a href="/Home" className={Navbarcss.title}>
+            <Link to="/" className={Navbarcss.title}>
 
                 <img src={logo} className={Navbarcss.logo} alt="FREE Logo"></img>
 
-            </a>
+            </Link>
 
             <div className={Navbarcss.burger} onClick={burgerClick}>
 
@@ -52,21 +53,31 @@ export default function Navbar(){
             <div className={Navbarcss.menu} ref={menu}>
                 <div className={Navbarcss.links}>
 
-                    <a href="https://freeinquotes.com/recap.html" target="_blank" rel="noreferrer">Collection 1</a>
-                    <a href="/Home">Collection 2</a>
-                    <a href="/Info">Info</a>
-                    <a href="/Contact">Contact</a>
+                    <Link to="/Collection1" onClick={burgerClick}>Collection 1</Link>
+                    <Link to="/" onClick={burgerClick}>Collection 2</Link>
+                    <Link to="/Info" onClick={burgerClick}>Info</Link>
+                    <Link to="/Contact" onClick={burgerClick}>Contact</Link>
 
                     <div className={Navbarcss.socials}>
+
                         <a href="https://www.instagram.com/freeinquotes/" target="_blank" rel="noreferrer">
+
                             <BsInstagram />
+
                         </a>
+
                         <a href="https://twitter.com/freeinquotes/" target="_blank" rel="noreferrer">
+
                             <BsTwitter />
+
                         </a>
+
                         <a href="https://www.tiktok.com/@freeinquotes" target="_blank" rel="noreferrer">
+
                             <FaTiktok />
+
                         </a>
+
                     </div>
 
                 </div>

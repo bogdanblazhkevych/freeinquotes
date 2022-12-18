@@ -1,5 +1,4 @@
 import footercss from './Footer.module.css';
-import { useState, useRef, useEffect } from 'react';
 
 export default function Footer(){
 

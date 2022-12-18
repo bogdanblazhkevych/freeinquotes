@@ -5,10 +5,10 @@ import Home from './Home/Home';
 import Info from './Info/Info';
 import Footer from './Footer/Footer';
 import Contact from './Contact/Contact';
-// import "./Fonts/DollarBill.ttf";
+import Collection1 from './Collection1/Collection1'
+import Recap from './Recap/Recap'
 import product1css from './product1/product1.module.css';
-import { faShirt } from '@fortawesome/free-solid-svg-icons';
-import { BsTypeH1 } from 'react-icons/bs';
+import { Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -53,10 +53,6 @@ function App() {
           BY: Richard Kauli
           <br></br>
           IN: Brooklyn, NY
-          <br></br>
-          Free Repairs for the next 10 years
-          <br></br>
-          My hard work will save you tears
         </p>
       </>
     )
@@ -93,9 +89,6 @@ function App() {
           <br></br>
           IN: Brooklyn, NY
           <br></br>
-          Free Repairs for the next 10 years
-          <br></br>
-          My hard work will save you tears
         </p>
       </>
     )
@@ -159,36 +152,25 @@ function App() {
     description: shirtDescription()
   }
 
-  let Component;
-  switch(window.location.pathname){
-    case '/':
-      Component = <Home />
-      break
-    case '/Product1':
-      Component = <Product1 props={glassesProps}/>
-      break
-    case '/Product2':
-      Component = <Product1 props={pantsProps}/>
-      break
-    case '/Product3':
-      Component = <Product1 props={shirtProps}/>
-      break
-    case '/Home':
-      Component = <Home />
-      break
-    case '/Contact':
-      Component = <Contact />
-      break
-    case '/Info': 
-      Component = <Info />
-      break
-  }
-
   return (
     <div className="App">
+
         <Navbar />
-        {Component}
+
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/Product2" element={<Product1 props={pantsProps}/>} />
+          <Route path="/Product1" element={<Product1 props={glassesProps}/>}/>
+          <Route path="/Product3" element={<Product1 props={shirtProps}/>} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Info" element={<Info />} />
+          <Route path="/Collection1" element={<Collection1 />} />
+          <Route path="/Recap" element={<Recap />} />
+        </Routes>
+
         <Footer />
+
     </div>
   );
 }

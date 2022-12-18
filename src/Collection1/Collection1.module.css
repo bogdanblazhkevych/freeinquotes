@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Dollar-Bill";
+    src: url(./../Fonts/DollarBill.ttf)
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.collection1{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    display: none;
+    overflow: hidden;
+}
+
+.free {
+	padding-top: 20px;
+	padding-bottom: -10px;
+    font-family: Dollar-Bill;
+    font-size: 9.5vw;
+    display:block;
+    text-align: center;
+}
+
+
+.backgroundimg {
+    width: 200vw;
+}
+
+@media only screen and (min-width: 600px){
+    .backgroundimg{
+        width: 100vw;
+    }
+}
+
+.button1 {
+    width: 100%;
+}
+.button2 {
+    width: 100%;
+}
+
+.bottombutton{
+    width: 45%;
+}
+
+.bottombuttons{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
