@@ -1,6 +1,7 @@
 import product1css from './product1.module.css';
-import { React360Viewer } from "react-360-product-viewer";
+// import { React360Viewer } from "react-360-product-viewer";
 import { useState, useRef, useEffect } from 'react';
+import ImageViewer from './imageViewer';
 
 export default function Product1({props: {item, name, price, images, link, description}}){
 
@@ -50,7 +51,7 @@ export default function Product1({props: {item, name, price, images, link, descr
                 <br></br>
 
                 <div className={product1css.spinContainer} onPointerDown={handleSpinClick}>
-                    <React360Viewer
+                    {/* <React360Viewer
                                     imagesBaseUrl={images}
                                     imageFilenamePrefix={item + "-"}
                                     imagesCount={16}
@@ -61,7 +62,13 @@ export default function Product1({props: {item, name, price, images, link, descr
                                     shouldNotifyEvents={true}
                                     notifyOnPointerDown={handleSpinClick}
                                     reverse={true}
-                    />
+                    /> */}
+                    <ImageViewer 
+                                imageArray={images}
+                                width={viewerSize}
+                                height={viewerSize}
+                                imageCount={16}
+                                speed={3}/>
                     <div className={product1css.spinIcon} id="spinIcon"></div>
                 </div>
 

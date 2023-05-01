@@ -1,6 +1,9 @@
 import Homecss from './Home.module.css';
 import loadingImage from './FEELFREE.png'
 import { Link } from "react-router-dom";
+import shirt1 from "../SHIRTFINAL/shirt-1.jpg"
+import pants1 from "../PANTSFINAL/pants-1.jpg"
+import glasses1 from "../FINALGLASSES/glasses-1.jpg"
 
 export default function Home(){
 
@@ -21,8 +24,10 @@ export default function Home(){
             body.style.position = "fixed";
 
             await delay(1500)
-
+            // website on hold: comment out this line and uncomment the one bellow it to continue development :)
+            // window.location.href= "https://www.instagram.com/freeinquotes/"
             targetPageLoader.style.opacity = "0%";
+            
 
             await delay(1500);
             
@@ -47,19 +52,19 @@ export default function Home(){
 
                 <Link to='./Product3' className={Homecss.box}>
 
-                    <img className={Homecss.pic} src="https://storage.googleapis.com/freeinquotespics/Shirt/SHIRT%20FINAL/shirt-1.jpg" alt="Shirt"></img>
+                    <img className={Homecss.pic} src={shirt1} alt="Shirt"></img>
 
                 </Link>
 
                 <Link to='./Product2' className={Homecss.box}>
 
-                    <img className={Homecss.pic} src="https://storage.googleapis.com/freeinquotespics/Pants/PANTS%20FINAL/pants-1.jpg" alt="Pants"></img>
+                    <img className={Homecss.pic} src={pants1} alt="Pants"></img>
 
                 </Link>
 
                 <Link to='./Product1' className={Homecss.box}>
 
-                    <img className={Homecss.pic} src="https://storage.googleapis.com/freeinquotespics/Glasses/FINAL%20GLASSES/glasses-1.jpg" alt="shirt"></img>
+                    <img className={Homecss.pic} src={glasses1} alt="shirt"></img>
                     
                 </Link>
 

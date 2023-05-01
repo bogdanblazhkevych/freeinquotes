@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { BrowserRouter, useLocation } from 'react-router-dom';
+import { BrowserRouter, useLocation, createHashRouter, RouterProvider } from 'react-router-dom';
 import { useEffect } from "react"
 
 function ScrollToTop() {
@@ -18,13 +18,21 @@ function ScrollToTop() {
   return null;
 }
 
+const router = createHashRouter([
+  {
+    path: "/*",
+    element: <App />,
+  }
+]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <ScrollToTop />
-      <App />
-    </BrowserRouter>
+    {/* <BrowserRouter> */}
+    {/* <ScrollToTop /> */}
+    <RouterProvider router={router} />
+      {/* <App /> */}
+    {/* </BrowserRouter> */}
   </React.StrictMode>
 );
 
